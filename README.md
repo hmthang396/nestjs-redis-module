@@ -1,0 +1,2 @@
+Redis Module for NestJS
+This repository contains a custom Redis module designed specifically for the NestJS framework. It provides seamless integration with Redis, allowing developers to easily manage Redis connections, cache data, and enhance the performance of their NestJS applications. This module is built to support both synchronous and asynchronous initialization, making it adaptable to various project requirements.
