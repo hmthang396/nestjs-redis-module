@@ -9,7 +9,7 @@
 		"target": "ES2021",
 		"sourceMap": true,
 		"outDir": "./lib",
-		"rootDir": "./src",
+		"baseUrl": "./",
 		"incremental": true,
 		"skipLibCheck": true,
 		"strictNullChecks": false,
@@ -19,7 +19,7 @@
 		"noFallthroughCasesInSwitch": false
 	},
 	"include": [
-		"./src",
+		"src/**/*",
 	],
 	"exclude": [
 		"node_modules",
