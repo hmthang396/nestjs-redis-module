@@ -1,6 +1,6 @@
 {
   "name": "nest-redis-module",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Redis Module for NestJS\r This repository contains a custom Redis module designed specifically for the NestJS framework. It provides seamless integration with Redis, allowing developers to easily manage Redis connections, cache data, and enhance the performance of their NestJS applications. This module is built to support both synchronous and asynchronous initialization, making it adaptable to various project requirements.",
   "author": "H-MINHTHANG <hminhthang396@gmail.com>",
   "private": false,
@@ -68,10 +68,14 @@
     "coverageDirectory": "../coverage",
     "testEnvironment": "node"
   },
-  "main": "index.ts",
+	"main": "lib/index.js",
+	"typings": "lib/index.d.ts",
   "directories": {
     "lib": "lib"
   },
+	"files": [
+		"lib"
+	],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hmthang396/nestjs-redis-module.git"
