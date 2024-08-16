@@ -1,3 +1,0 @@
-export declare const REDIS_CONNECTION = "REDIS_CONNECTION";
-export declare const REDIS_CONNECTION_TOKEN = "REDIS_CONNECTION_TOKEN";
-export declare const REDIS_OPTIONS_TOKEN = "REDIS_OPTIONS_TOKEN";
