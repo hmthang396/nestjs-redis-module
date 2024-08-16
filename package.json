@@ -1,12 +1,13 @@
 {
-  "name": "@nestjs/redis-module",
-  "version": "1.0.0",
+  "name": "nest-redis-module",
+  "version": "1.0.1",
   "description": "Redis Module for NestJS\r This repository contains a custom Redis module designed specifically for the NestJS framework. It provides seamless integration with Redis, allowing developers to easily manage Redis connections, cache data, and enhance the performance of their NestJS applications. This module is built to support both synchronous and asynchronous initialization, making it adaptable to various project requirements.",
   "author": "H-MINHTHANG <hminhthang396@gmail.com>",
   "private": false,
   "license": "ISC",
   "scripts": {
-    "build": "nest build",
+		"prebuild": "rimraf dist",
+    "build": "tsc -p tsconfig.json",
     "format": "prettier --write \"lib/**/*.ts\"",
     "start": "nest start",
     "start:dev": "nest start --watch",
@@ -18,17 +19,17 @@
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
-		"prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
     "@nestjs/common": "^10.0.0",
     "@nestjs/core": "^10.0.0",
-    "@types/ioredis": "^5.0.0",
     "ioredis": "^5.4.1",
     "reflect-metadata": "^0.2.0",
     "rxjs": "^7.8.1"
   },
   "devDependencies": {
+    "@types/ioredis": "^5.0.0",
     "@nestjs/cli": "^10.0.0",
     "@nestjs/schematics": "^10.0.0",
     "@nestjs/testing": "^10.0.0",
@@ -67,7 +68,7 @@
     "coverageDirectory": "../coverage",
     "testEnvironment": "node"
   },
-  "main": "lib/index.ts",
+  "main": "index.ts",
   "directories": {
     "lib": "lib"
   },
